@@ -12,7 +12,7 @@ class usuariosModel {
         $sql = "SELECT id,
                         nombres,
                         apellidos,                        
-                        usuario,
+                        user,
                         password,                                                
                         estado 
                 FROM users ";
@@ -33,7 +33,7 @@ class usuariosModel {
         $sql = "SELECT id,
                         nombres,
                         apellidos,                        
-                        usuario,
+                        user,
                         password,                                                
                         estado 
                 FROM users where id = $user_id";
@@ -52,7 +52,7 @@ class usuariosModel {
                     (
                     nombres,
                     apellidos,                   
-                    usuario,
+                   user,
                     password,                    
                     estado,
                     user_created_id,
@@ -87,7 +87,7 @@ class usuariosModel {
         $sql = "UPDATE users 
                     SET nombres = '$nombres',
                         apellidos = '$apellidos',
-                        usuario = '$usuario',
+                       user = '$usuario',
                         password = '$password',                                            
                         user_updated_id = $user_update_id,
                         fecha_updated = now()

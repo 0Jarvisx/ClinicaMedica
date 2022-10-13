@@ -36,10 +36,11 @@ body {
 }
 
 .menuOpciones {
-    background: #408686;
+    background: #92fbfb;
 
 }
 
 .menu_opcion {
-    color: white !important;
+    color: black !important;
+    
 }

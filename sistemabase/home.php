@@ -23,4 +23,3 @@ if(!$_SESSION['user_id']){
         </div>
     </div>
 </div>
-

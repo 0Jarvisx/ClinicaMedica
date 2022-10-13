@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css"  href="assets/css/template.css" />
     <link rel="stylesheet" type="text/css"  href="assets/css/status_server_modal.css" />
     <script src="assets/js/contentManager.js"></script>   
-    
 </head>
 
 <body>
+    
