@@ -33,9 +33,10 @@ if($obtenerUsuario == 1){
 }
 
 if($crearUsuario == 1){
+    $user_id = (isset($_POST['id'])) ? $_POST['id'] : "0";
     $nombres = (isset($_POST['nombres'])) ? $_POST['nombres'] : "0";
     $apellidos = (isset($_POST['apellidos'])) ? $_POST['apellidos'] : "0";    
-    $usuario = (isset($_POST['usuario'])) ? $fila['usuario'] : "0";
+    $usuario = (isset($_POST['usuario'])) ? $POST['usuario'] : "0";
     $password = (isset($_POST['password'])) ? $_POST['password'] : "0";
         
     $result = $usrClass->crearUsuario($nombres, $apellidos, $usuario, $password, $_SESSION['user_id']);

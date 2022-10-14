@@ -52,7 +52,7 @@ class usuariosModel {
                     (
                     nombres,
                     apellidos,                   
-                   user,
+                    user,
                     password,                    
                     estado,
                     user_created_id,
