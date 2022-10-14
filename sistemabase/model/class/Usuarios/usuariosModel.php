@@ -52,7 +52,7 @@ class usuariosModel {
                     (
                     nombres,
                     apellidos,                   
-                   user,
+                    user,
                     password,                    
                     estado,
                     user_created_id,
@@ -87,7 +87,7 @@ class usuariosModel {
         $sql = "UPDATE users 
                     SET nombres = '$nombres',
                         apellidos = '$apellidos',
-                       user = '$usuario',
+                        user = '$usuario',
                         password = '$password',                                            
                         user_updated_id = $user_update_id,
                         fecha_updated = now()

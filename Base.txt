@@ -1,4 +1,62 @@
 //BASE DE DATOS
+//TABLA USERS
+CREATE TABLE Sistema.users (
+	id INT auto_increment NOT NULL,
+	`user` varchar(100) NOT NULL,
+	password varchar(100) NOT NULL,
+	nombres varchar(500) NOT NULL,
+	apellidos varchar(500) NOT NULL,
+	user_created_id INT NOT NULL,
+	user_updated_id INT NULL,
+	fecha_created DATETIME NOT NULL,
+	fecha_updated DATETIME NULL,
+	estado varchar(3) NOT NULL,
+	CONSTRAINT users_PK PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_bin
+COMMENT='Tabla para la administración de usuarios del sistema'
+AUTO_INCREMENT=10;
+
+
+
+
+
+//CREAR usuario para conectar BDT 
+CREATE USER 'usuariodb'@'%' IDENTIFIED BY 'Usuariodb*123';
+ALTER USER 'usuariodb'@'%'
+WITH
+	MAX_USER_CONNECTIONS 1000
+	MAX_QUERIES_PER_HOUR 1000
+	MAX_UPDATES_PER_HOUR 1000
+	MAX_CONNECTIONS_PER_HOUR 1000;
+GRANT Usage ON *.* TO 'usuariodb'@'%';
+GRANT SYSTEM_USER ON *.* TO 'usuariodb'@'%';
+GRANT SET_USER_ID ON *.* TO 'usuariodb'@'%';
+
+//PRIVILEGIOS
+GRANT Alter ON Sistema.* TO 'usuariodb'@'%';
+GRANT Create ON Sistema.* TO 'usuariodb'@'%';
+GRANT Create view ON Sistema.* TO 'usuariodb'@'%';
+GRANT Delete ON Sistema.* TO 'usuariodb'@'%';
+GRANT Drop ON Sistema.* TO 'usuariodb'@'%' WITH GRANT OPTION;
+GRANT Index ON Sistema.* TO 'usuariodb'@'%';
+GRANT Select ON Sistema.* TO 'usuariodb'@'%';
+GRANT References ON Sistema.* TO 'usuariodb'@'%';
+GRANT Insert ON Sistema.* TO 'usuariodb'@'%';
+GRANT Show view ON Sistema.* TO 'usuariodb'@'%';
+GRANT Trigger ON Sistema.* TO 'usuariodb'@'%';
+GRANT Update ON Sistema.* TO 'usuariodb'@'%' WITH GRANT OPTION;
+
+//CREAR USUARIO DE TABLA USERS
+Use Sistema;
+
+INSERT into users (user, password, nombres, apellidos, user_created_id, fecha_created, estado) values('admin','admin','Javier','Linares de León', 1, now(), 'ACT');
+
+SELECT * from users 
+
+//TABLA ROL
 CREATE TABLE Rol (
 Id INT PRIMARY KEY IDENTITY (1,1) NOT NULL,
 Nombre VARCHAR(40) NOT NULL,
@@ -6,3 +64,4 @@ Apellido VARCHAR(40) NOT NULL,
 Domicilio TEXT,
 Fecha_Nacimiento DATETIME
 );
+
