@@ -24,9 +24,8 @@ if($obtenerUsuario == 1){
         $respuesta['id'] = $fila['id'];
         $respuesta['nombres'] = $fila['nombres'];
         $respuesta['apellidos'] = $fila['apellidos'];
-        $respuesta['usuario'] = $fila['user'];
+        $respuesta['usuario'] = $fila['usuario'];
         $respuesta['password'] = $fila['password'];
-        $respuesta['estado'] = $fila['estado'];
     }
 
     echo json_encode($respuesta);
@@ -36,7 +35,11 @@ if($crearUsuario == 1){
     $user_id = (isset($_POST['id'])) ? $_POST['id'] : "0";
     $nombres = (isset($_POST['nombres'])) ? $_POST['nombres'] : "0";
     $apellidos = (isset($_POST['apellidos'])) ? $_POST['apellidos'] : "0";    
+<<<<<<< HEAD
     $usuario = (isset($_POST['usuario'])) ? $POST['usuario'] : "0";
+=======
+    $usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : "0";
+>>>>>>> 4123b98aa5d750fd9617050af5aab4d377652913
     $password = (isset($_POST['password'])) ? $_POST['password'] : "0";
         
     $result = $usrClass->crearUsuario($nombres, $apellidos, $usuario, $password, $_SESSION['user_id']);
