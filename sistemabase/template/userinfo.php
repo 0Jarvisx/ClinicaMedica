@@ -1,4 +1,5 @@
 <?php 
+include_once("../../controller/");
 ?>
 
 <header class="p-3 mb-3 border-bottom fondoHeader">
@@ -27,6 +28,7 @@
                     <hr class="dropdown-divider">
                 </li>
                 <li ><a class="dropdown-item" href="cerrarsesion.php"><i class="bi bi-box-arrow-left"></i>Cerrar Sesión</a></li>
+
 
             </ul>
         </div>
