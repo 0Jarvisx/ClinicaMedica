@@ -22,11 +22,19 @@
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Módulo Usuarios
                     </a>
+                
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item " href="#" onclick="cargarContenido('view/Usuarios/usuariosView.php');">Usuarios</a></li>
                         
                     </ul>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle menu_opcion" href="#" id="navbarDropdownMenuLink1" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Pacientes
+                    </a>
+</li>
+
             </ul>
         </div>
     </div>

@@ -1,8 +1,9 @@
+
 $('#btnAgregarUsuario').on('click', function () {
     
     var nombres = $('#nombres').val();
     var apellidos = $('#apellidos').val();    
-    var usuario = $('#user').val();
+    var usuario = $('#usuario').val();
     var password = $('#password').val();
     
     if (nombres == ""){
@@ -138,5 +139,10 @@ function eliminarUsuario(id){
             }
         }
     });
+<<<<<<< HEAD
+    
+}
+=======
 
 }
+>>>>>>> 597d392225263bb3591bf492f66c45bf2a80f0ee
