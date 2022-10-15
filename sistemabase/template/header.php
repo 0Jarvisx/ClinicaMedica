@@ -34,5 +34,5 @@
     <script src="assets/js/contentManager.js"></script>   
 </head>
 
-<body class="bodypagina">
+<body >
     

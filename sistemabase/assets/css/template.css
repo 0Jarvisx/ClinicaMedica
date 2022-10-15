@@ -13,17 +13,17 @@
 }
 
 .fondoHeader {
-    background-color: beige;
+    background-color: #07d3ff;
     padding: 10px;
 }
 
 footer {
     position: absolute !important;
-    bottom: 0 !important;
+    bottom: 20 !important;
     color: white !important;
     width: 100% !important;
     background: white !important;
-    margin-bottom: -1px !important;
+    margin-bottom: -1px !important;
 }
 
 
@@ -32,7 +32,7 @@ footer {
 }
 
 body {
-    background: aliceblue;
+    background: #d5fff2;
 }
 
 .menuOpciones {
@@ -48,3 +48,4 @@ body {
 .bodypagina{
     height: max-content;
 }
+
