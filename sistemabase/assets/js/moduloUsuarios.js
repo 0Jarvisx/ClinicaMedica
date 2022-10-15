@@ -1,3 +1,4 @@
+
 $('#btnAgregarUsuario').on('click', function () {
     
     var nombres = $('#nombres').val();
@@ -138,5 +139,5 @@ function eliminarUsuario(id){
             }
         }
     });
-
+    
 }

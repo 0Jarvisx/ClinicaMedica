@@ -17,8 +17,7 @@ ENGINE=InnoDB
 DEFAULT CHARSET=utf8mb4
 COLLATE=utf8mb4_bin
 COMMENT='Tabla para la administración de usuarios del sistema'
-AUTO_INCREMENT=10;
-
+AUTO_INCREMENT=1;
 
 
 
