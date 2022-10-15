@@ -139,5 +139,10 @@ function eliminarUsuario(id){
             }
         }
     });
+<<<<<<< HEAD
     
 }
+=======
+
+}
+>>>>>>> 597d392225263bb3591bf492f66c45bf2a80f0ee
