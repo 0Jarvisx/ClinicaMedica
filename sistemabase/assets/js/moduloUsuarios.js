@@ -2,7 +2,7 @@ $('#btnAgregarUsuario').on('click', function () {
     
     var nombres = $('#nombres').val();
     var apellidos = $('#apellidos').val();    
-    var usuario = $('#user').val();
+    var usuario = $('#usuario').val();
     var password = $('#password').val();
     
     if (nombres == ""){

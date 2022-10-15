@@ -101,7 +101,7 @@ $result = $usrClass->getUsuarios();
 
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="usuario" placeholder=" aqui va tu username">
+                        <input type="text" class="form-control" id="usuario" placeholder="username">
                         <label for="usuario">Username</label>
                     </div>
 
