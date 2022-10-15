@@ -51,7 +51,7 @@ $result = $usrClass->getUsuarios();
                         <tr>
                             <th><?php echo $fila['id']; ?></th>
                             <td><?php echo $fila['nombres']." ".$fila['apellidos']; ?></td>
-                            <td><?php echo $fila['user']; ?></td>
+                            <td><?php echo $fila['usuario']; ?></td>
                             <td><?php echo $fila['password']; ?></td>
                             <td><?php echo $fila['estado']; ?></td>
                             <td>

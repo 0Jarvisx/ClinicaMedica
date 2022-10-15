@@ -26,7 +26,7 @@
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Cerrar Sessión</a></li>
+                <li><a class="dropdown-item" href="cerrarsesion.php">Cerrar Sessión</a></li>
 
             </ul>
         </div>
