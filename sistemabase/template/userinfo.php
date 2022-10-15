@@ -27,11 +27,8 @@ include_once("../../controller/");
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-<<<<<<< HEAD
-                <li><button type="button" class="btn btn-primary" id="CerrarSesion">Cerrar Sesión</li>
-=======
                 <li><a class="dropdown-item" href="cerrarsesion.php">Cerrar Sessión</a></li>
->>>>>>> 597d392225263bb3591bf492f66c45bf2a80f0ee
+
 
             </ul>
         </div>
