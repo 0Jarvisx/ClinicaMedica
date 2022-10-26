@@ -33,9 +33,5 @@ if($row = mysqli_fetch_array($result)){
 
 ob_end_flush();
 
-
-if (condition) {
-    # code...
-}
 ?>
 
