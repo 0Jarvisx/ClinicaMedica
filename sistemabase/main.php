@@ -17,8 +17,6 @@ include 'template/menu.php'
 ?>
 
 
-
-
 <!-- INJECCIÓN DEL CONTENIDO DINAMICO  -->
 <div class="wrapper">
 <div class="container">

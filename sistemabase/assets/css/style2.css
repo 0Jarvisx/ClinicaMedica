@@ -88,3 +88,11 @@ color: white;
 .links a{
 margin-left: 4px;
 }
+footer {
+    position: absolute !important;
+    bottom: 50 !important;
+    color: white !important;
+    width: 100% !important;
+    background: white !important;
+    margin-bottom: -1px !important;
+}

@@ -42,6 +42,8 @@ $result = $usrClass->getUsuarios();
                             <th scope="col">EDITAR</th>
                             <th scope="col">ELIMINAR</th>
                         </tr>
+                    
+
                     </thead>
                     <tbody>
 

@@ -28,12 +28,6 @@
                         
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle menu_opcion" href="#" id="navbarDropdownMenuLink1" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Pacientes
-                    </a>
-</li>
 
             </ul>
         </div>

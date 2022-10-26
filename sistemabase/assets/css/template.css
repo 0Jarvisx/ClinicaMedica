@@ -19,11 +19,12 @@
 
 footer {
     position: absolute !important;
-    bottom: 20 !important;
+    bottom: 50 !important;
     color: white !important;
     width: 100% !important;
     background: white !important;
     margin-bottom: -1px !important;
+  
 }
 
 
@@ -48,4 +49,5 @@ body {
 .bodypagina{
     height: max-content;
 }
+
 
