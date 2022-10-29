@@ -56,6 +56,7 @@ $result = $usrClass->getUsuarios();
                             <td><?php echo $fila['usuario']; ?></td>
                             <td><?php echo $fila['password']; ?></td>
                             <td><?php echo $fila['estado']; ?></td>
+                            
                             <td>
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                     <button class="btn btn-warning me-md-2" id="btnEditarUsuario"

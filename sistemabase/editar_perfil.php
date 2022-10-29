@@ -18,7 +18,9 @@ if(!$_SESSION['user_id']){
     <link rel="stylesheet" href="assets/css/style2.css">
     <title>Perfil</title>
 </head>
+
 <body>
+
 <div>
 	<div>
         <div class="col-md-4 well" id="leftPanel">
@@ -26,12 +28,11 @@ if(!$_SESSION['user_id']){
                 <div class="col-md-12">
 					
                 	<div>
-        				<img src="assets/img/logos/fotos/user.png" class="img-circle img-thumbnail">
+        				<img heigth="70px" src="data:image/jpeg;base64,<?php echo base64_encode($_SESSION['foto']);?>" class="img-circle img-thumbnail"/>
 						
                         <div> <?php echo $_SESSION['user_nombre']." ".$_SESSION['user_apellido'];
                          ?></b></h4>
 						 <hr class="colorgraph">
-				<button class="foto">Seleccionar foto</button>
                     </div>
         		  </div>
         		</div>
@@ -40,7 +41,7 @@ if(!$_SESSION['user_id']){
         <div class="col-md-8 well" id="rightPanel">
             <div class="row">
     <div class="col-md-12">
-    	<form align="center" class="form" method="POST" action="actualizar.php">
+    	<form align="center" class="form" method="POST" action="actualizar.php" enctype="multipart/form-data">
 			<h2>Editar perfil </h2>
 			<hr class="colorgraph">
             
@@ -49,6 +50,7 @@ if(!$_SESSION['user_id']){
 					<div class="form-group">
                         <input type="text" name="nombre_upd" id="nombre" class="form-control" placeholder="<?php echo $_SESSION['user_nombre'];?>" tabindex="1">
 					</div>
+					
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="form-group">
@@ -68,11 +70,13 @@ if(!$_SESSION['user_id']){
 			</div>
 			<hr class="colorgraph">
 				<div class="form"><button class="update">Actualizar datos</button></div>
+				<div class="form-group">
+				<input type="file" name="foto_upd" class="form-control-file"/>
+				</div>
 		</form>
 	</div>
 </div> 
 </body>
 </html>
 
-<?php
 

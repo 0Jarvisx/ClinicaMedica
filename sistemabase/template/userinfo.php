@@ -22,7 +22,7 @@ include_once("../../controller/");
                 <img src="assets/img/logos/fotos/user.png" width="50" height="50" class="rounded-circle">
             </a>
             <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                <li><a class="dropdown-item"  href="editar_perfil.php">Mi Perfil</a></li>
+                <li><a class="dropdown-item"  href="configuracionF.php">Mi Perfil</a></li>
                 <li><a class="dropdown-item"  href="editar_perfil.php">Configuración</a></li>    
                 <li>
                     <hr class="dropdown-divider">
