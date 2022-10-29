@@ -56,6 +56,7 @@ $('#btnActualizarUsuario').on('click', function () {
     var usuario = $('#usuario_upd').val();
     var password = $('#password_upd').val();
     
+
     if (nombres == ""){
         alert('El nombre es obligatorio');
         return false;
@@ -110,6 +111,7 @@ function obtenerUsuario(id){
             var apellidos = data.apellidos;
             var usuario = data.usuario;
             var clave = data.password;
+        
             
             $('#id_upd').val(id);
             $('#nombres_upd').val(nombres);

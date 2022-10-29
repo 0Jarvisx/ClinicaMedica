@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Base</title>
-
+   
     <!-- Bootstrap CSS -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -31,8 +31,13 @@
 
     <link rel="stylesheet" type="text/css"  href="assets/css/template.css" />
     <link rel="stylesheet" type="text/css"  href="assets/css/status_server_modal.css" />
+   
+
+
     <script src="assets/js/contentManager.js"></script>   
+
+
 </head>
 
-<body >
+<body>
     

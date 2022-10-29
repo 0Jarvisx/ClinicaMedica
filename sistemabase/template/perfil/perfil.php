@@ -24,7 +24,10 @@ include 'template/menu.php'
     
 </div>
 </div>
-
+<?php
+#footer
+include 'template/mainsidebar.php'
+?>
 
 <?php
 #footer

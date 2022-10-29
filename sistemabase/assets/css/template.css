@@ -12,13 +12,20 @@
     }
 }
 
+.user{
+    text-align: center;
+    margin-left: -50px;
+    
+}
 .fondoHeader {
     background-color: #07d3ff;
     padding: 10px;
+    margin-left: 0px;
 }
 
+
 footer {
-    position: absolute !important;
+  position: absolute !important;
     bottom: 50 !important;
     color: white !important;
     width: 100% !important;
@@ -29,25 +36,29 @@ footer {
 
 
 .top-bar-margen {
-    margin-top: -33px;
+    margin-top: -15px;
+    margin-left: 0px;
 }
 
 body {
     background: #d5fff2;
 }
 
+
 .menuOpciones {
     background: #92fbfb;
 
 }
+
+
 
 .menu_opcion {
     color: black !important;
     
 }
 
+
 .bodypagina{
     height: max-content;
 }
-
 

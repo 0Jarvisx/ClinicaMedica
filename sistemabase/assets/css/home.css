@@ -1,0 +1,19 @@
+.btn_edit{
+    
+    border-radius: 5px;
+    background: linear-gradient(-135deg, #50b2c8, #4158d0);
+    width: max-content;
+}
+
+.btn_elim{
+    background: linear-gradient(-135deg, #50b2c8, #4158d0);
+    border-radius: 5px;
+}
+
+.username{
+    margin-left: 20px;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+
+}

@@ -1,3 +1,6 @@
+
+<br>
+<br>
 <div class="absolute-bottom">
 <footer class="text-center text-white" style="background-color: #0a4275">
   <!-- Grid container -->
@@ -9,7 +12,7 @@
      <!-- Github -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://github.com/yari2003"
+        href="https://github.com/yari2003"  target="_blank"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fas fa-user"></i

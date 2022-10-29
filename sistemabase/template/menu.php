@@ -11,7 +11,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link active menu_opcion" aria-current="page" href="#">
+                    <a class="nav-link active menu_opcion" aria-current="page" href="main.php">
                         <i class="fa-solid fa-house-user"></i>
                         Inicio
                     </a>
@@ -28,7 +28,17 @@
                         
                     </ul>
                 </li>
-
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle menu_opcion" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Módulo Pacientes
+                    </a>
+                
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item " href="#" onclick="#">Pacientes</a></li>
+                        
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>

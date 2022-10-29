@@ -14,6 +14,7 @@ $result = $usrClass->getUsuarios();
 
 ?>
 <script src="assets/js/moduloUsuarios.js"></script>
+<link rel="stylesheet" href="assets/css/home.css">
 <div class="card">
     <div class="card-header">
         <div
@@ -35,6 +36,7 @@ $result = $usrClass->getUsuarios();
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
+                            <th scope="col">FOTO</th>
                             <th scope="col">NOMBRE</th>
                             <th scope="col">USERNAME</th>
                             <th scope="col">CLAVE</th>
@@ -52,22 +54,22 @@ $result = $usrClass->getUsuarios();
                     ?>
                         <tr>
                             <th><?php echo $fila['id']; ?></th>
+                            <td><?php echo $fila['imagen']; ?></td>
                             <td><?php echo $fila['nombres']." ".$fila['apellidos']; ?></td>
                             <td><?php echo $fila['usuario']; ?></td>
                             <td><?php echo $fila['password']; ?></td>
                             <td><?php echo $fila['estado']; ?></td>
                             <td>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-warning me-md-2" id="btnEditarUsuario"
+                                
+                                    <button  class="btn_edit" id="btnEditarUsuario" 
                                         name="btnEditarUsuario" type="button" onclick="obtenerUsuario(<?php echo $fila['id']; ?>);">Editar</button>
-                                </div>
+                                
                             </td>
                             <td>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-danger me-md-2" id="btnEliminarUsuario"
+                                    <button class="btn_elim" id="btnEliminarUsuario"
                                         onclick="eliminarUsuario(<?php echo $fila['id']; ?>);" name="btnEliminarUsuario"
                                         type="button">Eliminar</button>
-                                </div>
+                               
                             </td>
                         </tr>
 
