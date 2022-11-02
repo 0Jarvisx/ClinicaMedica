@@ -10,11 +10,11 @@ include_once("../../controller/");
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <p class="username"> <?php echo $_SESSION['username'] ?> </p>
+            <p class="username"> <?php echo $_SESSION['user_nombre'] ?> </p>
         </ul>
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
+        <form class="buscar">
+            <input type="search" class="buscar2" placeholder="Buscar..." aria-label="Search">
         </form>
 
         <div class="dropdown text-end">

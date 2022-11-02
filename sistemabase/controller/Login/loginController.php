@@ -18,7 +18,7 @@ if($row = mysqli_fetch_array($result)){
     $_SESSION['user_nombre'] = $row['nombres'];
     $_SESSION['user_apellido'] = $row['apellidos'];
     $_SESSION['username'] = $row['usuario'];
-    $_SESSION['img'] = $row['imagen'];
+    $_SESSION['imagen'] = $row['imagen'];
     
 
     header("location: ../../main.php");

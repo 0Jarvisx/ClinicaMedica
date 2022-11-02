@@ -18,10 +18,11 @@
     
 }
 .fondoHeader {
-    background-color: #07d3ff;
+    background: linear-gradient(-135deg, #50b2c8, #4158d0, #50b2c8, #50b2c8 );
     padding: 10px;
     margin-left: 0px;
 }
+
 
 
 footer {
@@ -49,7 +50,6 @@ body {
     background: #92fbfb;
 
 }
-
 
 
 .menu_opcion {

@@ -98,7 +98,7 @@ ul {
       </h4>
               <p>Medico</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="assets/img/logos/inicio/medicos.png">
+            <div class="icon"><img height="80" width="80" src="assets/img/inicio/medicos.png">
               <i class=""></i>
             </div>
           </div>
@@ -122,7 +122,7 @@ ul {
       </h4>
               <p> Paciente</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="assets/img/logos/inicio/paciente.png">
+            <div class="icon"><img height="80" width="80" src="assets/img/inicio/paciente.png">
               <i class=""></i>
             </div>
           </div>
@@ -140,7 +140,7 @@ ul {
       </h4>
               <p>Mis citas</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="assets/img/logos/inicio/miscitas.png">
+            <div class="icon"><img height="80" width="80" src="assets/img/inicio/miscitas.png">
               <i class=""></i>
             </div>
           </div>
@@ -157,7 +157,7 @@ ul {
       </h4>
               <p> Cita</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="assets/img/logos/inicio/cita.png">
+            <div class="icon"><img height="80" width="80" src="assets/img/inicio/cita.png">
               <i class=""></i>
             </div>
    </div>
@@ -176,7 +176,7 @@ ul {
       </h4>
               <p> Preescripcion</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="assets/img/logos/inicio/preescripcion.png">
+            <div class="icon"><img height="80" width="80" src="assets/img/inicio/preescripcion.png">
               <i class=""></i>
             </div>
     </div>
@@ -194,7 +194,7 @@ ul {
       </h4>
               <p> Histaria de caso</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="assets/img/logos/inicio/historial.png">
+            <div class="icon"><img height="80" width="80" src="assets/img/inicio/historial.png">
               <i class=""></i>
             </div>
     </div>
@@ -214,7 +214,7 @@ ul {
       </h4>
               <p>Pago factura</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="assets/img/logos/inicio/factura.png">
+            <div class="icon"><img height="80" width="80" src="assets/img/inicio/factura.png">
               <i class=""></i>
             </div>
        </div>
@@ -231,7 +231,7 @@ ul {
       </h4>
               <p>Configuración</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="assets/img/logos/inicio/config.png">
+            <div class="icon"><img height="80" width="80" src="assets/img/inicio/config.png">
               <i class=""></i>
             </div>
  </div>

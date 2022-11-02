@@ -5,20 +5,14 @@ if(!$_SESSION['user_id']){
     header("location: index.php");
 } 
 
-$usuario_upd = $_POST['user_upd'];
-$apellido_upd = $_POST['apellido_upd'];
-$clave_upd = $_POST['clave_upd'];
-$nombre_upd = $_POST['nombre_upd'];
 $us_id = $_SESSION['user_id'];
 
-
-
-/*if (!empty($_FILES['imagen']['name'])){
+if (!empty($_FILES['imagen']['name'])){
 	# code...
 
 
-$target_dir = "assets/img/logos/fotos/";
-	$target_file = $target_dir.basename($_FILES["imagen"]["name"]);
+$dir = "../assets/img/fotos/";
+	$target_file = $dir.basename($_FILES["imagen"]["name"]);
 	$uploadok = 1;
 	$imagefiletype = pathinfo($target_file, PATHINFO_EXTENSION);
 	//check if image file is a actual image or fake image
@@ -50,19 +44,29 @@ $target_dir = "assets/img/logos/fotos/";
 			
 	$img=basename($_FILES["imagen"]["name"]);
 
-*/
+
+		}
+	}
+
+
 
 
 $conexion = mysqli_connect(SERVER, USERDB, PASSDB, DATABASE);
    
     $sql_update = "UPDATE Sistema.users
-    SET usuario='$usuario_upd', password='$clave_upd', nombres='$nombre_upd', apellidos='$apellido_upd'
+    SET imagen='$img'
     WHERE id=$us_id";
 
   
     if(mysqli_query($conexion,$sql_update)){
+
+
+
+		
+
+
 	
-        header("location: main.php");
+        header("location: editar_perfil.php");
       	
     
     }else{

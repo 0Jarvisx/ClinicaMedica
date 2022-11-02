@@ -28,7 +28,9 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #8a8f91 !important;
+    background-image: url("https://media.istockphoto.com/photos/healthcare-photos-picture-id954802966?k=20&m=954802966&s=612x612&w=0&h=3iWELRIN8B_CVib-LhF0tW_twwKviG5HY3RY3xLeVVE=") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -95,4 +97,7 @@ html {
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #c0392b !important;
 }
+
+
+
 

@@ -26,7 +26,6 @@ if($obtenerUsuario == 1){
         $respuesta['apellidos'] = $fila['apellidos'];
         $respuesta['usuario'] = $fila['usuario'];
         $respuesta['password'] = $fila['password'];
-      
     }
 
     echo json_encode($respuesta);

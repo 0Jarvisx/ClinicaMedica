@@ -25,20 +25,25 @@ include_once("../../model/functions.php");
 
 
 
-   
+
 <div class="limiter">
+
 <div class="container-login100">
+	<form class="foto" method="POST" action="foto.php">
 		<div class="wrap-login100">
 		<div class="login100-pic js-tilt" data-tilt>
-				<img src="assets/img/logos/fotos/user.png" class="img-fluid">
+		<IMG src="assets/img/fotos/<?php echo $_SESSION['imagen'];?>" style="height:50PX" />
 				<div class="user"> <?php echo $_SESSION['user_nombre']." ".$_SESSION['user_apellido'];
                          ?></b></h4>
 						 <hr class="colorgraph">
-						
-						 <input type="file" placeholder="#" id="foto_upd" name="foto_upd" class="form-control" action="actualizar.php" accept="image/*" placeholder="<?php echo $_SESSION['foto_upd'];?>" >
+						 
+						 <input type="file"  id="imagen" name="imagen" class="form-control" >
+						<button class="img">Subir imagen</button>
 						
                     </div>
+					</form>
 </div>
+
 <form aling= center class="login100-form validate-form" method="POST" action="actualizar.php">
 				
 			<div class="editarPerfil">
