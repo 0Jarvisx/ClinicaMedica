@@ -23,8 +23,13 @@ include_once("../../controller/");
                 <img src="assets/img/logos/fotos/user.png <?php echo$_SESSION['user_imagen'] ?>" width="50" height="50" class="rounded-circle">
             </a>
             <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+<<<<<<< HEAD
                 <li><a class="dropdown-item"  onclick="cargarContenido('editar_perfil.php')">Mi Perfil</a></li>
                 <li><a class="dropdown-item"  onclick="cargarContenido('editar_perfil.php')">Configuración</a></li>    
+=======
+                <li><a class="dropdown-item"  href="configuracionF.php">Mi Perfil</a></li>
+                <li><a class="dropdown-item"  href="editar_perfil.php">Configuración</a></li>    
+>>>>>>> origin
                 <li>
                     <hr class="dropdown-divider">
                 </li>

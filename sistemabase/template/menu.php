@@ -11,7 +11,11 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
+<<<<<<< HEAD
                     <a class="nav-link active menu_opcion" aria-current="page" href="main.php">
+=======
+                    <a class="nav-link active menu_opcion" aria-current="page" href="#" onclick="cargarContenido('home.php')">
+>>>>>>> origin
                         <i class="fa-solid fa-house-user"></i>
                         Inicio
                     </a>
@@ -24,7 +28,7 @@
                     </a>
                 
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item " href="#" onclick="cargarContenido('view/Usuarios/usuariosView.php');">Usuarios</a></li>
+                        <li><a class="dropdown-item " href="#" onclick="cargarContenido('view/Usuarios/usuariosView.php');" >Usuarios</a></li>
                         
                     </ul>
                 </li>

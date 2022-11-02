@@ -14,7 +14,9 @@ class usuariosModel {
                         apellidos,                        
                         usuario,
                         password,                                                
-                        estado 
+                        estado,
+                        foto,
+                        tipo
                 FROM users ";
  
         $resultado = mysqli_query($conexion, $sql);
@@ -35,7 +37,9 @@ class usuariosModel {
                         apellidos,                        
                         usuario,
                         password,                                                
-                        estado 
+                        estado,
+                        foto,
+                        tipo 
                 FROM users where id = $user_id";
  
         $resultado = mysqli_query($conexion, $sql);
