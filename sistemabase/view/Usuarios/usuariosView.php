@@ -14,11 +14,12 @@ $result = $usrClass->getUsuarios();
 
 ?>
 <script src="assets/js/moduloUsuarios.js"></script>
+<link rel="stylesheet" href="assets/css/home.css">
 <div class="card">
     <div class="card-header">
         <div
-            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">LISTADO DE USUARIOS</h1>
+            class="titulo">
+            <h1 align="center" class="titulo">LISTADO DE USUARIOS</h1>
         </div>
     </div>
 
@@ -35,6 +36,7 @@ $result = $usrClass->getUsuarios();
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
+                            <th scope="col">FOTO</th>
                             <th scope="col">NOMBRE</th>
                             <th scope="col">USERNAME</th>
                             <th scope="col">CLAVE</th>
@@ -52,23 +54,23 @@ $result = $usrClass->getUsuarios();
                     ?>
                         <tr>
                             <th><?php echo $fila['id']; ?></th>
+                            <td><img src="assets/img/fotos/<?php echo $fila['imagen']; ?>" /></td>
                             <td><?php echo $fila['nombres']." ".$fila['apellidos']; ?></td>
                             <td><?php echo $fila['usuario']; ?></td>
                             <td><?php echo $fila['password']; ?></td>
                             <td><?php echo $fila['estado']; ?></td>
                             
                             <td>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-warning me-md-2" id="btnEditarUsuario"
+                                
+                                    <button  class="btn_edit" id="btnEditarUsuario" 
                                         name="btnEditarUsuario" type="button" onclick="obtenerUsuario(<?php echo $fila['id']; ?>);">Editar</button>
-                                </div>
+                                
                             </td>
                             <td>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-danger me-md-2" id="btnEliminarUsuario"
+                                    <button class="btn_elim" id="btnEliminarUsuario"
                                         onclick="eliminarUsuario(<?php echo $fila['id']; ?>);" name="btnEliminarUsuario"
                                         type="button">Eliminar</button>
-                                </div>
+                               
                             </td>
                         </tr>
 
@@ -91,7 +93,7 @@ $result = $usrClass->getUsuarios();
                     <h5 class="modal-title" id="formNuevoUsuario">Nuevo Usuario</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
+            
                 <div class="modal-body">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="nombres" placeholder="aqui va tu nombre">
@@ -110,20 +112,20 @@ $result = $usrClass->getUsuarios();
 
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control" id="password" placeholder="aqui va tu clave">
-                        <label for="password">Clave</label>
+                        <label for="password">Password</label>
                     </div>
 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" id="btnAgregarUsuario">Agregar Usuario</button>
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <!-- AQUI INICIA ESTA EL FORMULARIO MODAL PARA AGREGAR USUARIOS -->
+    <!-- AQUI INICIA ESTA EL FORMULARIO MODAL PARA ACTUALIZAR USUARIOS -->
     <div class="modal fade" id="formActualizaUsuario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -159,7 +161,7 @@ $result = $usrClass->getUsuarios();
 
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="password_upd" placeholder="aqui va tu clave">
-                        <label for="password_upd">Clave</label>
+                        <label for="password_upd">Password</label>
                     </div>
 
                 </div>
