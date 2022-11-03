@@ -18,13 +18,6 @@ if($row = mysqli_fetch_array($result)){
     $_SESSION['user_nombre'] = $row['nombres'];
     $_SESSION['user_apellido'] = $row['apellidos'];
     $_SESSION['username'] = $row['usuario'];
-<<<<<<< HEAD
-    $_SESSION['imagen'] = $row['imagen'];
-    
-=======
-    $_SESSION['foto_user']=$row['foto'];
->>>>>>> origin
-
     header("location: ../../main.php");
 }else{
 

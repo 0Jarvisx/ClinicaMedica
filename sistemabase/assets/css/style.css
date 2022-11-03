@@ -97,14 +97,3 @@ html {
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #c0392b !important;
 }
-
-<<<<<<< HEAD
-
-
-
-=======
-.editar-perfil{
-    top: -1 !important;
-    border: #000000 solid 10px;
-}
->>>>>>> origin

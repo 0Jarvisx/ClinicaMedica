@@ -17,11 +17,12 @@ include_once("../../model/functions.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
-<<<<<<< HEAD
     <link rel="stylesheet" href="assets/css/editar.css">
+	<link rel="stylesheet" type="text/css"  href="assets/css/template.css" />
+    <link rel="stylesheet" type="text/css"  href="assets/css/status_server_modal.css" />
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 
@@ -48,35 +49,7 @@ include_once("../../model/functions.php");
 <form aling= center class="login100-form validate-form" method="POST" action="actualizar.php">
 				
 			<div class="editarPerfil">
-=======
-    <link rel="stylesheet" href="assets/css/style2.css">
-    <title>Perfil</title>
-</head>
 
-<body>
-
-<div>
-	<div>
-        <div class="col-md-4 well" id="leftPanel">
-            <div class="row">
-                <div class="col-md-12">
-					
-                	<div>
-        				<img heigth="70px" src="data:image/jpeg;base64,<?php echo base64_encode($_SESSION['foto']);?>" class="img-circle img-thumbnail"/>
-						
-                        <div> <?php echo $_SESSION['user_nombre']." ".$_SESSION['user_apellido'];
-                         ?></b></h4>
-						 <hr class="colorgraph">
-                    </div>
-        		  </div>
-        		</div>
-            </div>
-        </div>
-        <div class="col-md-8 well" id="rightPanel">
-            <div class="row">
-    <div class="col-md-12">
-    	<form align="center" class="form" method="POST" action="actualizar.php" enctype="multipart/form-data">
->>>>>>> origin
 			<h2>Editar perfil </h2>
 			</div>
 			<hr class="colorgraph">
@@ -106,7 +79,6 @@ include_once("../../model/functions.php");
 		
 		
 			<hr class="colorgraph">
-<<<<<<< HEAD
 				<div class="container-login100-form-btn"><button class="login100-form-btn">Actualizar datos</button></div>
 </div></div>
 			</form>
@@ -114,19 +86,6 @@ include_once("../../model/functions.php");
 </div>
 </div>
 
-
-
-
-=======
-				<div class="form"><button class="update">Actualizar datos</button></div>
-				<div class="form-group">
-				<input type="file" name="foto_upd" class="form-control-file"/>
-				</div>
-		</form>
-	</div>
-</div> 
-</body>
->>>>>>> origin
 </html>
 
 

@@ -9,19 +9,12 @@ $usuario_upd = $_POST['user_upd'];
 $apellido_upd = $_POST['apellido_upd'];
 $clave_upd = $_POST['clave_upd'];
 $nombre_upd = $_POST['nombre_upd'];
+
 $us_id = $_SESSION['user_id'];
-$tipoArchivo=$_POST['foto_upd']['type'];
-$nombreArchivo=$_POST['foto_upd']['name'];
-$tamanoArchivo=$_POST['foto_upd']['size'];
-$imagenSubida=fopen($_FILES['foto_upd']['tmp_name'],'r');
-$binariosImagen=fread($imagenSubida, $tamanoArchivo);
-$binariosImagen=mysqli_escape_string($conexion, $binariosImagen);
-//$query="INSERT INTO users (foto, tipo) VALUES ('".$binariosImagen."', '".$tipoArchivo."')";
-//$res=mysqli_query($conexion, $query);
+
 
 /*if (!empty($_FILES['imagen']['name'])){
 	# code...
-
 
 $target_dir = "assets/img/logos/fotos/";
 	$target_file = $target_dir.basename($_FILES["imagen"]["name"]);
@@ -62,8 +55,7 @@ $target_dir = "assets/img/logos/fotos/";
 $conexion = mysqli_connect(SERVER, USERDB, PASSDB, DATABASE);
    
     $sql_update = "UPDATE Sistema.users
-    SET usuario='$usuario_upd', password='$clave_upd', nombres='$nombre_upd', apellidos='$apellido_upd',
-    foto='$binariosImagen', tipo='$tipoArchivo'
+    SET usuario='$usuario_upd', password='$clave_upd', nombres='$nombre_upd', apellidos='$apellido_upd'
     WHERE id=$us_id";
 
   

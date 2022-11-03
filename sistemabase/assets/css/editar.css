@@ -2951,6 +2951,7 @@ iframe {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  background: #d5fff2;
 }
 .user{
 	text-align: center;
@@ -2968,7 +2969,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #5ac2de;
+background: #d5fff2;
   background: -webkit-linear-gradient(-135deg, #50b2c8, #4158d0);
   background: -o-linear-gradient(-135deg,  #50b2c8, #4158d0);
   background: -moz-linear-gradient(-135deg, #50b2c8, #4158d0);
@@ -2977,7 +2978,7 @@ iframe {
 
 .wrap-login100 {
   width: 960px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 10px;
   overflow: hidden;
 

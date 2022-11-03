@@ -88,15 +88,3 @@ color: white;
 .links a{
 margin-left: 4px;
 }
-
-footer {
-    margin-top: 5 !important;
-    position: absolute !important;
-    bottom: 0 !important;
-    color: white !important;
-    width: 100% !important;
-    background: white !important;
-    margin-bottom: -1px !important;
-    display: flex !important;
-    height: 100% !important;
-}
