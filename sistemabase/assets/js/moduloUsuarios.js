@@ -24,6 +24,8 @@ $('#btnAgregarUsuario').on('click', function () {
         return false;
     }
 
+
+
     $.ajax({
         type: 'POST',
         data: "crear_usuario=1&nombres=" + nombres + "&apellidos=" + apellidos + "&usuario=" + usuario + "&password=" + password,

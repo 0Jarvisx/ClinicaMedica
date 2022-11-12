@@ -5,7 +5,7 @@ if(!$_SESSION['user_id']){
     header("location: index.php");
 } 
 
-include_once("../../model/functions.php");
+
 
 
 ?>
@@ -69,7 +69,7 @@ include_once("../../model/functions.php");
 				</div>
 			</div>
 			<div class="form-group">
-				<input type="nickname" name="user_upd" id="usuario" class="form-control" placeholder="<?php echo $_SESSION['username'];?>"  tabindex="4">
+				<input type="nickname" name="user_upd" id="usuario" class="form-control"  placeholder="<?php echo $_SESSION['username'];?>"  tabindex="4" disabled>
 			</div>
 		
 				

@@ -1,5 +1,6 @@
 <br>
 <br>
+</aside>  
 
 <footer class="text-center text-white" style="background-color: #0a4275">
   <!-- Grid container -->
@@ -53,4 +54,4 @@
   <!-- Copyright -->
 
 </footer>
-
+</body>

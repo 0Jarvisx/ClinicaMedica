@@ -1,5 +1,7 @@
 <?php 
+
 ?>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light top-bar-margen" >
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -30,4 +32,4 @@
         </div>
     </div>
 </nav>
-<br>
+

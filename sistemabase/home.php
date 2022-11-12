@@ -112,15 +112,12 @@ ul {
 
     <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-black">
+          <div class="small-box bg-black"  onclick="cargarContenido('view/citas/citas.php')">
             <div class="inner">
-      
-      <h4>
+              <h4>
 
-
-
-      </h4>
-              <p> Paciente</p>
+              </h4>
+         <p>CREAR CITAS</p>
             </div>
             <div class="icon"><img height="80" width="80" src="assets/img/inicio/paciente.png">
               <i class=""></i>
@@ -149,15 +146,11 @@ ul {
     <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-black">
-            <div class="inner">
-      
-      <h4>
-
-
-      </h4>
-              <p> Cita</p>
+            <div class="inner" href="view/citas/citas.php">
+              <p> Citas</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="assets/img/inicio/cita.png">
+            <link rel="stylesheet" href="view/citas/citas.php">
+            <div class="icon"><img height="80" width="80" src="assets/img/inicio/cita.png" >
               <i class=""></i>
             </div>
    </div>

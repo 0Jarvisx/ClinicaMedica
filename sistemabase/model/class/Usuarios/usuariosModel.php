@@ -14,7 +14,7 @@ class usuariosModel {
                         apellidos,                        
                         usuario,
                         password,                                                
-                        estado 
+                        estado        
                 FROM users ";
  
         $resultado = mysqli_query($conexion, $sql);
@@ -35,7 +35,7 @@ class usuariosModel {
                         apellidos,                        
                         usuario,
                         password,                                                
-                        estado 
+                        estado
                 FROM users where id = $user_id";
  
         $resultado = mysqli_query($conexion, $sql);
@@ -63,11 +63,13 @@ class usuariosModel {
                     '$apellidos',                     
                     '$usuario',
                     '$password',                                                        
-                    'A',
+                    'ACT',
                     $user_id,
                     now())";        
 
         $resultado = mysqli_query($conexion, $sql);
+    
+    
         if($resultado){
             $conexionClass->desconectar($conexion);
             return 1;
@@ -76,6 +78,52 @@ class usuariosModel {
             return 0;
         }
     }
+
+    /**
+     * Funcion para subir foto
+     */
+/*
+     function subirfoto($imagen, $user_id){
+
+
+        if (!isset($_FILES['imagen'])){
+            return false;
+        }
+        $imagen= $_FILES['imagen'];
+        $targetDir= '/assets/img/fotos/';
+        $extension= explode('.', $iamgen['name']);
+        $filename= $extension[sizeof($extension) - 2];
+        $ext= $extension[sizeof($extension) - 1];
+        $hash= md5(Date('Ymdgi') . $filename) .$ext;
+        $targetDir= $targetDir. $hash;
+        $uploadOk= false;
+        $imageFileType= strlower(pathinfo($targetFile, PATHINFO_EXTENSION));
+        $check= getimagesize($imagen['tmp_name']);
+        if ($check != false) {
+            $uploadOk=true;
+    
+            
+        }else{
+            $uploadOk=false;
+    
+        }
+        if (!$uploadOk) {
+            alert('El archivo no es una imagen');
+            return false;
+        }else{
+            if (move_uploaded_file($imagen['tmp_name'], $targetFile)) {
+                
+            }
+        }
+     
+     $conexionClass = new Tools();
+        $conexion = $conexionClass->conectar();
+        $sql = "UPDATE users
+        SET imagen = '$imagen'
+        WHERE id = $user_id";
+
+    }
+*/
 
     /**
      * Función para actualizar un usuario

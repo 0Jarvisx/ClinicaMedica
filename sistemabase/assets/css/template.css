@@ -1,3 +1,7 @@
+
+
+/*template*/
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -12,13 +16,14 @@
     }
 }
 
-.user{
+.user {
     text-align: center;
     margin-left: -50px;
-    
+
 }
+
 .fondoHeader {
-    background: linear-gradient(-135deg, #50b2c8, #4158d0, #50b2c8, #50b2c8 );
+    background: linear-gradient(-135deg, #50b2c8, #4158d0, #50b2c8, #50b2c8);
     padding: 10px;
     margin-left: 0px;
 }
@@ -26,13 +31,13 @@
 
 
 footer {
-  position: absolute !important;
+    position: absolute !important;
     bottom: 50 !important;
     color: white !important;
     width: 100% !important;
     background: white !important;
-    margin-bottom: -1px !important;
-  
+    margin-bottom: -1px !important;
+
 }
 
 
@@ -54,11 +59,10 @@ body {
 
 .menu_opcion {
     color: black !important;
-    
+
 }
 
 
-.bodypagina{
+.bodypagina {
     height: max-content;
 }
-

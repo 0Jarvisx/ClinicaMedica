@@ -39,7 +39,7 @@ $result = $usrClass->getUsuarios();
                             <th scope="col">FOTO</th>
                             <th scope="col">NOMBRE</th>
                             <th scope="col">USERNAME</th>
-                            <th scope="col">CLAVE</th>
+                            <th scope="col">PASSWORD</th>
                             <th scope="col">ESTADO</th>
                             <th scope="col">EDITAR</th>
                             <th scope="col">ELIMINAR</th>
@@ -54,7 +54,7 @@ $result = $usrClass->getUsuarios();
                     ?>
                         <tr>
                             <th><?php echo $fila['id']; ?></th>
-                            <td><img src="assets/img/fotos/<?php echo $fila['imagen']; ?>" /></td>
+                            <td><img src="/assets/img/fotos/<?php echo $fila['imagen']; ?>" /></td>
                             <td><?php echo $fila['nombres']." ".$fila['apellidos']; ?></td>
                             <td><?php echo $fila['usuario']; ?></td>
                             <td><?php echo $fila['password']; ?></td>
@@ -93,7 +93,7 @@ $result = $usrClass->getUsuarios();
                     <h5 class="modal-title" id="formNuevoUsuario">Nuevo Usuario</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            
+                   
                 <div class="modal-body">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="nombres" placeholder="aqui va tu nombre">

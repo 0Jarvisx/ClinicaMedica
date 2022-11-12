@@ -5,12 +5,18 @@ if(!$_SESSION['user_id']){
     header("location: index.php");
 } 
 
-$usuario_upd = $_POST['user_upd'];
+
 $apellido_upd = $_POST['apellido_upd'];
 $clave_upd = $_POST['clave_upd'];
 $nombre_upd = $_POST['nombre_upd'];
 
 $us_id = $_SESSION['user_id'];
+
+
+$_SESSION['user_nombre'] = $_POST['nombre_upd'];
+$_SESSION['user_apellido'] = $_POST['apellido_upd'];
+
+
 
 
 /*if (!empty($_FILES['imagen']['name'])){
@@ -55,7 +61,7 @@ $target_dir = "assets/img/logos/fotos/";
 $conexion = mysqli_connect(SERVER, USERDB, PASSDB, DATABASE);
    
     $sql_update = "UPDATE Sistema.users
-    SET usuario='$usuario_upd', password='$clave_upd', nombres='$nombre_upd', apellidos='$apellido_upd'
+    SET  password='$clave_upd', nombres='$nombre_upd', apellidos='$apellido_upd'
     WHERE id=$us_id";
 
   

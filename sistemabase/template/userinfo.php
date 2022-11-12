@@ -20,7 +20,7 @@ include_once("../../controller/");
         <div class="dropdown text-end">
             <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="assets/img/logos/fotos/user.png <?php echo$_SESSION['user_imagen'] ?>" width="50" height="50" class="rounded-circle">
+                <img src="assets/img/fotos/user.png <?php echo$_SESSION['user_imagen'] ?>" width="50" height="50" class="rounded-circle">
             </a>
             <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
 
@@ -34,3 +34,4 @@ include_once("../../controller/");
         </div>
     </div>
 </header>
+<aside>

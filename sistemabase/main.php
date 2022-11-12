@@ -20,7 +20,7 @@ include 'template/header.php';
 include 'template/userinfo.php';
 
 #Barra de menús
-include 'template/menu.php'
+include 'template/menu.php';
 ?>
 
 
