@@ -12,6 +12,7 @@ if (DEBUG == "true") {
 require_once("class/Conn/Tools.php");
 require_once("class/Login/loginModel.php");
 require_once("class/Usuarios/usuariosModel.php");
-
+require_once("class/Pacientes/pacientesModel.php");
+require_once("class/Medicamentos/medicamentosModel.php");
 
 ?>
