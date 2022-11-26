@@ -22,10 +22,12 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle menu_opcion" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Módulo Usuarios
+                        Catalogos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item " href="#" onclick="cargarContenido('view/Usuarios/usuariosView.php');">Usuarios</a></li>                                                
+                        <li><a class="dropdown-item " href="#" onclick="cargarContenido('view/Usuarios/usuariosView.php');">Usuarios</a></li>
+                        <li><a class="dropdown-item " href="#" onclick="cargarContenido('view/Pacientes/pacientesView.php');">Pacientes</a></li>
+                        <li><a class="dropdown-item " href="#" onclick="cargarContenido('view/Medicamentos/medicamentosView.php');">Medicamentos</a></li>                                                
                     </ul>
                 </li>
             </ul>
