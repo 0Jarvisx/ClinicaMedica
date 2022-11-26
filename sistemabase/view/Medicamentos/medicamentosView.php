@@ -15,11 +15,19 @@ $result = $usrClass->getMedicamentos();
 ?>
 <script src="assets/js/moduloMedicamentos.js"></script>
 <link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/medicamento.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
 <div class="card">
     <div class="card-header">
         <div
             class="titulo">
-            <h1 align="center" class="titulo">LISTADO DE MEDICAMENTOS</h1>
+            <h1 class="font-effect-shadow-multiple">LISTADO DE MEDICAMENTOS</h1>
+            <style>
+            h1 {
+                font-family: "Sofia", sans-serif;
+            }
+        </style>
         </div>
     </div>
 
@@ -28,8 +36,13 @@ $result = $usrClass->getMedicamentos();
 
         <div class="container">
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-success me-md-2" id="btnNuevoMedicamento" name="btnNuevoMedicamento" type="button"
-                    data-bs-toggle="modal" data-bs-target="#formNuevoMedicamento">Nuevo Medicamento</button>
+                <button class="btn-neon me-md-2" id="btnNuevoMedicamento" name="btnNuevoMedicamento" type="button"
+                    data-bs-toggle="modal" data-bs-target="#formNuevoMedicamento">Nuevo Medicamento
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    </button>
             </div>
             <div class="table-responsive">
                 <table class="table">
@@ -58,14 +71,33 @@ $result = $usrClass->getMedicamentos();
                             
                             <td>
                                 
-                                    <button  class="btn_edit" id="btnEditarMedicamento" 
-                                        name="btnEditarMedicamento" type="button" onclick="obtenerMedicamento(<?php echo $fila['id']; ?>);">Editar</button>
-                                
+                                    <button  class="btn_medicamento" id="btnEditarMedicamento" 
+                                        name="btnEditarMedicamento" type="button" onclick="obtenerMedicamento(<?php echo $fila['id']; ?>);">Editar
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span> 
+                                        <style>
+                                        button{
+                                            font-family: "Trirong", serif;
+                                        }
+                                        </style> 
+                                    </button>
                             </td>
                             <td>
-                                    <button class="btn_elim" id="btnEliminarMedicamento"
+                                    <button class="btn_medicamento" id="btnEliminarMedicamento"
                                         onclick="eliminarMedicamento(<?php echo $fila['id']; ?>);" name="btnEliminarMedicamento"
-                                        type="button">Eliminar</button>
+                                        type="button">Eliminar
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span> 
+                                        <style>
+                                        button{
+                                            font-family: "Trirong", serif;
+                                        }
+                                        </style>   
+                                    </button>
                                
                             </td>
                         </tr>
