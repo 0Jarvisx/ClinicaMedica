@@ -15,11 +15,16 @@ $result = $usrClass->getPacientes();
 ?>
 <script src="assets/js/moduloPacientes.js"></script>
 <link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/pacientes.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
 <div class="card">
     <div class="card-header">
         <div
             class="titulo">
             <h1 align="center" class="titulo">LISTADO DE PACIENTES</h1>
+            <style>
+            h1{font-family: "Audiowide", sans-serif;}
+            </style> 
         </div>
     </div>
 
@@ -28,8 +33,13 @@ $result = $usrClass->getPacientes();
 
         <div class="container">
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-success me-md-2" id="btnNuevoPaciente" name="btnNuevoPaciente" type="button"
-                    data-bs-toggle="modal" data-bs-target="#formNuevoPaciente">Nuevo Paciente</button>
+                <button class="btn-neon1" id="btnNuevoPaciente" name="btnNuevoPaciente" type="button"
+                    data-bs-toggle="modal" data-bs-target="#formNuevoPaciente">Nuevo Paciente
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                </button>
             </div>
             <div class="table-responsive">
                 <table class="table">
@@ -64,14 +74,24 @@ $result = $usrClass->getPacientes();
                             
                             <td>
                                 
-                                    <button  class="btn_edit" id="btnEditarPAciente" 
-                                        name="btnEditarUsuario" type="button" onclick="obtenerPaciente(<?php echo $fila['id']; ?>);">Editar</button>
+                                    <button  class="btn_paciente" id="btnEditarPAciente" 
+                                        name="btnEditarUsuario" type="button" onclick="obtenerPaciente(<?php echo $fila['id']; ?>);">Editar
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
                                 
                             </td>
                             <td>
-                                    <button class="btn_elim" id="btnEliminarPaciente"
+                                    <button class="btn_paciente" id="btnEliminarPaciente"
                                         onclick="eliminarPaciente(<?php echo $fila['id']; ?>);" name="btnEliminarPaciente"
-                                        type="button">Eliminar</button>
+                                        type="button">Eliminar
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
                                
                             </td>
                         </tr>
